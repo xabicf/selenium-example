@@ -32,6 +32,6 @@ public class ExampleTest {
     public void testNginxWelcomePage() throws Exception {
         driver.get(System.getProperty("testUrl"));
         Thread.sleep(1000);
-        assertEquals("Welcome to nginx!", driver.getTitle());
+        assertEquals("Hello Selenium!", driver.getTitle());
     }
 }
