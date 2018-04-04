@@ -3,7 +3,6 @@ def appName = 'mynginx'
 def appServicePort = '80'
 def testerImage = 'maven:latest'
 
-wf.init(this)
 node () {
     stage ('Checkout'){
         echo 'Checking out git repository'
