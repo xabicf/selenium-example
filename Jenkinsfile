@@ -17,7 +17,7 @@ node () {
         wf.imagePromote('staging')
     }
 
-    wf.imageDeploy(appServicePort) {
+    wf.deployService(appServicePort) {
         stage ('Test Image') {
         parallel(
             "Selenium Chrome": {
